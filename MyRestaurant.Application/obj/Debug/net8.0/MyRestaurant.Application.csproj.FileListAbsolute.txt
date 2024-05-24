@@ -1,0 +1,15 @@
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\bin\Debug\net8.0\MyRestaurant.Application.deps.json
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\bin\Debug\net8.0\MyRestaurant.Application.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\bin\Debug\net8.0\MyRestaurant.Application.pdb
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\bin\Debug\net8.0\MyRestaurant.Domain.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\bin\Debug\net8.0\MyRestaurant.Domain.pdb
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.csproj.AssemblyReference.cache
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.AssemblyInfoInputs.cache
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.AssemblyInfo.cs
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.csproj.CoreCompileInputs.cache
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestau.DB305F9A.Up2Date
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\refint\MyRestaurant.Application.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.pdb
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\ref\MyRestaurant.Application.dll
