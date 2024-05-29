@@ -17,3 +17,4 @@ D:\SKRIPSI\MyRestaurant\MyRestaurant\Infrastructure\obj\Debug\net8.0\refint\MyRe
 D:\SKRIPSI\MyRestaurant\MyRestaurant\Infrastructure\obj\Debug\net8.0\MyRestaurant.Infrastructure.pdb
 D:\SKRIPSI\MyRestaurant\MyRestaurant\Infrastructure\obj\Debug\net8.0\MyRestaurant.Infrastructure.genruntimeconfig.cache
 D:\SKRIPSI\MyRestaurant\MyRestaurant\Infrastructure\obj\Debug\net8.0\ref\MyRestaurant.Infrastructure.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\Infrastructure\obj\Debug\net8.0\MyRestaurant.Infrastructure.sourcelink.json

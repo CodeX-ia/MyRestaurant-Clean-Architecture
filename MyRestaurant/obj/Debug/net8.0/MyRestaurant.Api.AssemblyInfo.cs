@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyRestaurant.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35015a6bae8b117e11ada054b6b76c2170b64cfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyRestaurant.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyRestaurant.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

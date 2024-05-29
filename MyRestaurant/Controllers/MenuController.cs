@@ -1,9 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyRestaurant.Application.Commands.CreateMenu;
-using MyRestaurant.Application.Commands.DeleteMenu;
-using MyRestaurant.Application.Commands.UpdateMenu;
+using MyRestaurant.Application.Commands.CreateMenuItem;
+using MyRestaurant.Application.Commands.DeleteMenuItem;
+using MyRestaurant.Application.Commands.UpdateMenuItem;
 using MyRestaurant.Application.Queries.GetAllMenus;
 using MyRestaurant.Application.Queries.GetMenuById;
 using MyRestaurant.Application.Response;
@@ -21,45 +21,50 @@ public class MenuController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpGet("{id}")]
-    public async Task<ActionResult<MenuResponse>> GetById(Guid id)
-    {
-        var query = new GetMenuByIdQuery { Id = id };
-        var result = await _mediator.Send(query);
-        return Ok(result);
-    }
-
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<MenuResponse>>> GetAll()
+    public async Task<ActionResult<IEnumerable<MenuResponse>>> GetAllMenus()
     {
         var query = new GetAllMenusQuery();
         var result = await _mediator.Send(query);
         return Ok(result);
     }
 
+    [HttpGet("{id}")]
+    public async Task<ActionResult<MenuResponse>> GetMenuById(Guid id)
+    {
+        var query = new GetMenuByIdQuery(id);
+        var result = await _mediator.Send(query);
+        return Ok(result);
+    }
+
     [HttpPost]
-    public async Task<ActionResult<Guid>> Create([FromBody] CreateMenuCommand command)
+    public async Task<ActionResult<Guid>> CreateMenu(CreateMenuCommand command)
     {
         var result = await _mediator.Send(command);
         return Ok(result);
     }
 
-    [HttpPut("{id}")]
-    public async Task<ActionResult> Update(Guid id, [FromBody] UpdateMenuCommand command)
+    [HttpPost("{menuId}/items")]
+    public async Task<ActionResult<Guid>> CreateMenuItem(Guid menuId, CreateMenuItemCommand command)
     {
-        if (id != command.Id)
-        {
-            return BadRequest("Id mismatch");
-        }
+        command.MenuId = menuId;
+        var result = await _mediator.Send(command);
+        return Ok(result);
+    }
 
+    [HttpPut("{menuId}/items/{itemId}")]
+    public async Task<IActionResult> UpdateMenuItem(Guid menuId, Guid itemId, UpdateMenuItemCommand command)
+    {
+        command.MenuId = menuId;
+        command.Id = itemId;
         await _mediator.Send(command);
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(Guid id)
+    [HttpDelete("{menuId}/items/{itemId}")]
+    public async Task<IActionResult> DeleteMenuItem(Guid menuId, Guid itemId)
     {
-        var command = new DeleteMenuCommand { Id = id };
+        var command = new DeleteMenuItemCommand { MenuId = menuId, Id = itemId };
         await _mediator.Send(command);
         return NoContent();
     }

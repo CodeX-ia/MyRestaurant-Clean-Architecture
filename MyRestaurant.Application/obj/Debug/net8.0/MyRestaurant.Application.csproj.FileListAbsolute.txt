@@ -13,3 +13,4 @@ D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\M
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\refint\MyRestaurant.Application.dll
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.pdb
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\ref\MyRestaurant.Application.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Application\obj\Debug\net8.0\MyRestaurant.Application.sourcelink.json

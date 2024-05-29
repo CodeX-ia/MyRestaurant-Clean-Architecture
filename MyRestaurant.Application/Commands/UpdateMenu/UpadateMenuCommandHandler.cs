@@ -21,15 +21,10 @@ public class UpdateMenuCommandHandler : IRequestHandler<UpdateMenuCommand>
     public async Task<Unit> Handle(UpdateMenuCommand request, CancellationToken cancellationToken)
     {
         var menu = await _unitOfWork.Menus.GetByIdAsync(request.Id);
-
-        if (menu == null)
-        {
-            throw new Exception("Menu not found");
-        }
+        if (menu == null) throw new Exception("Menu not found");
 
         request.Adapt(menu);
-
-        _unitOfWork.Menus.Update(menu);
+        await _unitOfWork.Menus.UpdateAsync(menu);
         await _unitOfWork.CommitAsync();
 
         return Unit.Value;

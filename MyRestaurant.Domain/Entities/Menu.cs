@@ -11,4 +11,5 @@ public class Menu
     public Guid Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
+    public ICollection<MenuItem> Items { get; set; }
 }

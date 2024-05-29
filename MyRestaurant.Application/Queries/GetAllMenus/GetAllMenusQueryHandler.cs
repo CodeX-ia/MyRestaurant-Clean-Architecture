@@ -1,6 +1,7 @@
 ﻿using Mapster;
 using MediatR;
 using MyRestaurant.Application.Interfaces;
+using MyRestaurant.Application.Queries.GetMenuById;
 using MyRestaurant.Application.Response;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,9 @@ public class GetAllMenusQueryHandler : IRequestHandler<GetAllMenusQuery, IEnumer
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<MenuResponse>> Handle(GetAllMenusQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<MenuResponse>> Handle
+        (GetAllMenusQuery request, 
+        CancellationToken cancellationToken)
     {
         var menus = await _unitOfWork.Menus.GetAllAsync();
         return menus.Adapt<IEnumerable<MenuResponse>>();

@@ -12,6 +12,7 @@ public interface IMenuRepository
     Task<Menu> GetByIdAsync(Guid id);
     Task<IEnumerable<Menu>> GetAllAsync();
     Task AddAsync(Menu menu);
-    void Update(Menu menu);
-    void Delete(Menu menu);
+    Task UpdateAsync(Menu menu);
+    Task DeleteAsync(Guid id);
+    Task RemoveAsync(Menu menu);
 }

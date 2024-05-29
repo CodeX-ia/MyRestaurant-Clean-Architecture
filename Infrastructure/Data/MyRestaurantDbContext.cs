@@ -13,6 +13,7 @@ public class MyRestaurantDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Menu> Menus { get; set; }
+    public DbSet<MenuItem> MenuItems { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -21,6 +22,7 @@ public class MyRestaurantDbContext : DbContext
         // Apply individual configurations
         modelBuilder.ApplyConfiguration(new UserConfiguration());
         modelBuilder.ApplyConfiguration(new MenuConfiguration());
+        modelBuilder.ApplyConfiguration(new MenuItemConfiguration());
 
         // Alternatively, if you have many configurations, use this:
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(MyRestaurantDbContext).Assembly);

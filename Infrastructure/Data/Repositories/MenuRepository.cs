@@ -21,12 +21,12 @@ public class MenuRepository : IMenuRepository
 
     public async Task<Menu> GetByIdAsync(Guid id)
     {
-        return await _context.Menus.FindAsync(id);
+        return await _context.Menus.Include(m => m.Items).FirstOrDefaultAsync(m => m.Id == id);
     }
 
     public async Task<IEnumerable<Menu>> GetAllAsync()
     {
-        return await _context.Menus.ToListAsync();
+        return await _context.Menus.Include(m => m.Items).ToListAsync();
     }
 
     public async Task AddAsync(Menu menu)
@@ -34,13 +34,25 @@ public class MenuRepository : IMenuRepository
         await _context.Menus.AddAsync(menu);
     }
 
-    public void Update(Menu menu)
+    public async Task UpdateAsync(Menu menu)
     {
         _context.Menus.Update(menu);
+        await Task.CompletedTask;
     }
 
-    public void Delete(Menu menu)
+    public async Task DeleteAsync(Guid id)
+    {
+        var menu = await GetByIdAsync(id);
+        if (menu != null)
+        {
+            _context.Menus.Remove(menu);
+            await Task.CompletedTask;
+        }
+    }
+
+    public async Task RemoveAsync(Menu menu)
     {
         _context.Menus.Remove(menu);
+        await Task.CompletedTask;
     }
 }

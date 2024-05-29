@@ -149,3 +149,4 @@ D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant\bin\Debug\net8.0\ru\Microsoft.
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant\obj\Debug\net8.0\MyRestaurant.Api.sourcelink.json

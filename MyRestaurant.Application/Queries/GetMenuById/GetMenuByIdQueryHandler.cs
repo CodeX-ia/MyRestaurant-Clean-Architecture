@@ -17,12 +17,6 @@ public class GetMenuByIdQueryHandler : IRequestHandler<GetMenuByIdQuery, MenuRes
     public async Task<MenuResponse> Handle(GetMenuByIdQuery request, CancellationToken cancellationToken)
     {
         var menu = await _unitOfWork.Menus.GetByIdAsync(request.Id);
-
-        if (menu == null)
-        {
-            throw new Exception("Menu not found");
-        }
-
         return menu.Adapt<MenuResponse>();
     }
 }

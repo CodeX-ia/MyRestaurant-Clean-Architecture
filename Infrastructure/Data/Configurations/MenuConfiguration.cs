@@ -20,5 +20,11 @@ public class MenuConfiguration : IEntityTypeConfiguration<Menu>
         
         builder.Property(m => m.Description)
             .HasMaxLength(500);
+
+        builder.HasMany(m => m.Items)
+            .WithOne(mi => mi.Menu)
+            .HasForeignKey(mi => mi.MenuId);
+
+        builder.ToTable("Menus");
     }
 }

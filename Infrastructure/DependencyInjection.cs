@@ -23,6 +23,7 @@ public static class DependencyInjection
 
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IMenuRepository, MenuRepository>();
+        services.AddScoped<IMenuItemRepository, MenuItemRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddTransient<IJwtTokenGenerator, JwtTokenGenerator>();
 

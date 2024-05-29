@@ -10,3 +10,4 @@ D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Domain\obj\Debug\net8.0\refint
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Domain\obj\Debug\net8.0\MyRestaurant.Domain.pdb
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Domain\obj\Debug\net8.0\ref\MyRestaurant.Domain.dll
 D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Domain\obj\Debug\net8.0\MyRestaurant.Domain.csproj.AssemblyReference.cache
+D:\SKRIPSI\MyRestaurant\MyRestaurant\MyRestaurant.Domain\obj\Debug\net8.0\MyRestaurant.Domain.sourcelink.json

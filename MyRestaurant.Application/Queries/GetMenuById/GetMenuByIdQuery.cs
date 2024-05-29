@@ -12,4 +12,9 @@ namespace MyRestaurant.Application.Queries.GetMenuById;
 public class GetMenuByIdQuery : IRequest<MenuResponse>
 {
     public Guid Id { get; set; }
+
+    public GetMenuByIdQuery(Guid id)
+    {
+        Id = id;
+    }
 }
